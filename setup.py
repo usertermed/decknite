@@ -21,6 +21,6 @@ print(f"Epic Launcher Installer downloaded successfully to {epic_launcher_file}"
 
 input("Pressing ENTER will open the Epic Launcher Installer. Please follow the installer instructions to install the Epic Launcher.")
 os.system("mkdir ~/.decknite/compat")
-os.system("STEAM_COMPAT_DATA_PATH="~/.decknite/compat")
+os.system('STEAM_COMPAT_DATA_PATH="~/.decknite/compat"')
 
 subprocess.run([steam_compat_path_proton, "run", epic_launcher_file])
